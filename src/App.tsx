@@ -1,5 +1,13 @@
+import { Home } from "./pages/Home"
+import { GlobalStyles } from "./styles/GlobalStyles"
+
 function App() {
-  return <h1>Project</h1>
+  return (
+  <>
+  <GlobalStyles />
+  <Home />
+  </>
+  )
 
 }
 
