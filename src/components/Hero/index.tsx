@@ -9,8 +9,10 @@ export const Hero = () => (
       <div>
       <h2>Classic Cuts, Refined Beard Grooming & More</h2>
       <p>Crafted with precision, tradition, and attention to every detail — because every gentleman deserves his edge.</p>
-    <Button><a href="#">Haircuts</a></Button>
-    <Button><a href="#">Book now</a></Button>
+    <div>
+      <Button><a href="#">Haircuts</a></Button>
+      <Button><a href="#">Book now</a></Button>
+    </div>
     </div>
     <img src={image}/>
     </S.Content>

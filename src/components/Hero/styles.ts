@@ -23,8 +23,8 @@ export const Content = styled.section`
     }
 
     button {
-    padding: 24px;
-      margin-right: 48px;
+      padding: 24px;
+      margin-left: 128px;
     }
   }
 
