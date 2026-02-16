@@ -16,6 +16,8 @@ export const Content = styled.section`
 
     h2 {
       font-size: 48px;
+      text-align: center;
+      font-weight: 900;
     }
 
     p {
