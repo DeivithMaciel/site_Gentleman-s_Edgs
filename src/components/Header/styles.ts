@@ -1,13 +1,17 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { colors } from "../../styles/GlobalStyles";
+import { colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  padding: 16px 240px;
-  justify-content: space-between;
   background-color: ${colors.darkBrown};
+  width: 100%;
+
+  section {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    justify-content: space-between;
+  }
 
   h1 {
     margin: 0;
@@ -34,22 +38,22 @@ export const Container = styled.div`
       }
     }
   }
+`
 
-  button {
-      padding: 16px;
-      border-radius: 32px;
-      background-color: ${colors.gray};
-      font-weight: bold;
-      font-size: 16px;
-      cursor: pointer;
+export const Button = styled.button`
+  padding: 16px;
+  border-radius: 32px;
+  background-color: ${colors.gray};
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
 
-      &:hover {
-        filter: brightness(0.8);
-        }
+  &:hover {
+    filter: brightness(0.8);
+  }
 
-        a {
-          color: ${colors.brown};
-          text-decoration: none;
-      }
+  a {
+    color: ${colors.brown};
+    text-decoration: none;
   }
 `
