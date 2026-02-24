@@ -6,6 +6,7 @@ export const Container = styled.div`
   color: ${colors.gray};
   background-color: ${colors.black};
   width: 100%;
+  padding-top: 128px;
 `
 
 export const Content = styled.section`
