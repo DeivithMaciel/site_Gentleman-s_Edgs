@@ -5,6 +5,7 @@ import { colors } from "../../styles/GlobalStyles";
 export const Container = styled.div`
   width: 100%;
   background-color: ${colors.black};
+  padding: 64px 0 128px 0;
 `
 
 export const Content = styled.section`

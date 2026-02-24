@@ -2,9 +2,9 @@ import styled from "styled-components";
 import { colors } from "../../styles/GlobalStyles";
 
 export const Container = styled.div`
-  background-color: ${colors.black};
+  background-color: ${colors.lightBrown};
   width: 100%;
-  padding-top: 128px;
+  padding: 16px 0;
 `
 
 export const List = styled.ul`
