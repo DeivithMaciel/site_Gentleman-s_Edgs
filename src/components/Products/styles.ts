@@ -5,6 +5,7 @@ export const Container = styled.div`
   width: 100%;
   background-color: ${colors.lightBrown};
   padding-top: 8px;
+  padding-bottom: 64px;
 
   h2 {
     text-align: center;
