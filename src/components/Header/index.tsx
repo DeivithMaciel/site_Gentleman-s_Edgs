@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-import logo  from '../../assets/images/logo.png'
+import logo  from '../../assets/images/logo2.png'
 
 export const Header = () => {
   return (

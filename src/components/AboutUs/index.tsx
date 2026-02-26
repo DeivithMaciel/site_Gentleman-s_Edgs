@@ -1,7 +1,7 @@
 import * as S from './styles'
 import { Button } from '../Header/styles'
 
-import image from '../../assets/images/image.aboutUs.png'
+import image from '../../assets/images/barbers.png'
 
 
 export const AboutUs = () => (

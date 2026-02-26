@@ -1,6 +1,6 @@
 import { Container } from './styles'
 
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo2.png'
 
 export const Footer = () => (
   <Container>
