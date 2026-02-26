@@ -15,6 +15,7 @@ export const Content = styled.section`
   div {
     flex-direction: column;
     align-items: center;
+    padding-top: 64px;
 
     h1 {
       font-size: 48px;
