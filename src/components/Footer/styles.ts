@@ -19,6 +19,12 @@ export const Container = styled.div`
 
     p {
       font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    span {
+      padding: 0;
+      font-size: 12px;
     }
   }
 

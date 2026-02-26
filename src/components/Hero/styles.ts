@@ -14,11 +14,13 @@ export const Content = styled.section`
 
   div {
     flex-direction: column;
+    align-items: center;
 
-    h2 {
+    h1 {
       font-size: 48px;
       text-align: center;
       font-weight: 900;
+      padding-right: 64px;
     }
 
     p {
