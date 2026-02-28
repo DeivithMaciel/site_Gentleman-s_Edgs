@@ -6,7 +6,8 @@ export const colors = {
   darkBrown: '#291006',
   gray: '#d1ccc0',
   white: '#fff',
-  black: '#000'
+  black: '#000',
+  veryDarkBrown: '#1b1410'
 }
 
 export const GlobalStyles = createGlobalStyle`
