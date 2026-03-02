@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import * as S from './styles'
 
-import { Product, ProductCategory } from '../../services/products/types'
+import { Product, ProductCategory } from '../../services/types'
 import { getProductsByCategory } from '../../services/products/api'
 
 export const Products = () => {

@@ -10,3 +10,12 @@ export interface Product {
   category: ProductCategory
   price: number
 }
+
+export interface Haircut {
+  id: string
+  name: string
+  description: string
+  price: number
+  duration: string
+  image: string
+}

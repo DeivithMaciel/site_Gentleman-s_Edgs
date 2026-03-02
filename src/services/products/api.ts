@@ -1,4 +1,4 @@
-import { Product } from './types'
+import { Product } from '../types'
 
 import pomade1 from '../../assets/images/products/pomade.1.png'
 import pomade2 from '../../assets/images/products/pomade.2.png'
