@@ -55,11 +55,20 @@ export const ItemList = styled.li`
     height: 240px;
     width: 240px;
     border-radius: 8px;
+    transition: 0.3s ease;
+
+    &:hover {
+      transform: translateY(-8px);
+    }
+  }
+
+  p {
+    margin: 12px 0;
+    color: ${colors.black};
+    font-size: 24px;
   }
 
   span {
-    margin-top: 16px;
-    color: ${colors.black};
     font-size: 24px;
   }
 `

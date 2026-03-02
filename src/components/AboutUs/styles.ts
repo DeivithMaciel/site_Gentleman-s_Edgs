@@ -24,7 +24,7 @@ export const Content = styled.section`
     flex-direction: column;
 
     h3 {
-      font-size: 48px;
+      font-size: 40px;
       font-weight: 900;
       text-align: center;
     }

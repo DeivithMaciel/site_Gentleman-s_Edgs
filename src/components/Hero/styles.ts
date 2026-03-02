@@ -1,10 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { colors } from "../../styles/GlobalStyles";
+import { colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   color: ${colors.gray};
-  background-color: ${colors.black};
+    background: linear-gradient(
+  to left,
+  #000 40%,
+  rgba(0, 0, 0, 0.8));
   width: 100%;
   padding-top: 128px;
 `

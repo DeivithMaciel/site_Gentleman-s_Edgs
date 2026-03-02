@@ -9,7 +9,7 @@ export const Container = styled.div`
 
   .container {
     background-color: ${colors.darkBrown};
-    padding: 48px;
+    padding: 56px;
     border-radius: 16px;
   }
 

@@ -6,6 +6,7 @@ import { Header } from "../../components/Header"
 import { Hero } from "../../components/Hero"
 import { Products } from "../../components/Products"
 import { VisitUs } from "../../components/VisitUs"
+import { WhatsAppFloat } from "../../components/WhatsAppFloat"
 
 export const Home = () => {
   return (
@@ -17,6 +18,7 @@ export const Home = () => {
       <Products />
       <VisitUs />
       <Contact />
+      <WhatsAppFloat />
       <Footer />
     </>
   )

@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import styled from 'styled-components'
+import { colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.lightBrown};
@@ -11,12 +11,16 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 
-li {
-  list-style: none;
+  li {
+    list-style: none;
 
-  img {
-    height: 180px;
-    border-radius: 8px;
+    img {
+      height: 180px;
+      border-radius: 8px;
+
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
   }
-}
 `
