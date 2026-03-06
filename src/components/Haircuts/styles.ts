@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: #111;
@@ -75,5 +76,27 @@ export const Slide = styled.li`
     &:hover {
       opacity: 0.85;
     }
+  }
+`
+
+export const Dots = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 12px;
+`
+
+export const Dot = styled.button<{ $active: boolean }>`
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-color: ${({ $active }) =>
+    $active ? `${colors.darkBrown}` : `${colors.lightBrown}`};
+  transition: 0.3s;
+
+  &:hover {
+    background-color: ${colors.darkBrown};
   }
 `

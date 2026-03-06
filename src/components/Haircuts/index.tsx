@@ -24,7 +24,7 @@ export const Haircuts = () => {
       setCurrent(prev =>
         prev === items.length - 1 ? 0 : prev + 1
       )
-    }, 4000)
+    }, 6000)
 
     return () => clearInterval(interval)
   }, [items.length])
@@ -56,6 +56,11 @@ export const Haircuts = () => {
             ))}
           </S.Slides>
         </S.Carousel>
+        <S.Dots>
+          {items.map((_, index) => (
+            <S.Dot key={index} $active={index === current} onClick={() => setCurrent(index)} />
+          ))}
+        </S.Dots>
       </section>
     </S.Container>
   )
