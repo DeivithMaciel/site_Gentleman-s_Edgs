@@ -8,6 +8,7 @@ import * as S from './styles'
 export const Haircuts = () => {
   const [current, setCurrent] = useState(0)
   const [items, setItems] = useState<Haircut[]>([])
+  const [paused, setPaused] = useState(false)
 
   useEffect(() => {
     const load = async () => {
@@ -18,22 +19,24 @@ export const Haircuts = () => {
     load()
   }, [])
   useEffect(() => {
-    if (items.length === 0) return
+    if (items.length === 0 || paused ) return
 
     const interval = setInterval(() => {
       setCurrent(prev =>
         prev === items.length - 1 ? 0 : prev + 1
       )
-    }, 6000)
+    }, 4000)
 
     return () => clearInterval(interval)
-  }, [items.length])
+  }, [items.length, paused])
 
   return (
     <S.Container>
       <section className="container">
-        <S.Title>Our Haircuts</S.Title>
-        <S.Carousel>
+        <S.Title>Some Of Our Haircuts</S.Title>
+        <S.Carousel
+        onMouseEnter={() => setPaused(true)}
+        onMouseOut={() => setPaused(false)}>
           <S.Slides style={{ transform: `translateX(-${current * 100}%)` }}>
             {items.map((cut) => (
               <S.Slide key={cut.id}>
