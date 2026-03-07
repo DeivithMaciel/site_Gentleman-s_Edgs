@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import { breakpoints, colors } from "../../styles/GlobalStyles";
 
 export const Container = styled.div`
   width: 100%;
@@ -16,6 +16,12 @@ export const Container = styled.div`
     text-align: center;
     font-size: 48px;
   }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      h2 {
+        font-size: 48px;
+      }
+    }
 `
 
 export const ButtonList = styled.ul`
@@ -43,6 +49,10 @@ export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 64px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 export const ItemList = styled.li`
@@ -71,4 +81,11 @@ export const ItemList = styled.li`
   span {
     font-size: 24px;
   }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      img {
+        height: 200px;
+        width: 200px;
+      }
+    }
 `

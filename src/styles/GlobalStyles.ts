@@ -10,6 +10,11 @@ export const colors = {
   veryDarkBrown: '#1b1410'
 }
 
+export const breakpoints = {
+  tablet: '1024px',
+  mobile: '768px'
+}
+
 export const GlobalStyles = createGlobalStyle`
   body {
   margin: 0;
@@ -21,5 +26,9 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 24px;
+
+    @media (max-width:${breakpoints.tablet}) {
+      max-width: 1024px;
+    }
   }
 `

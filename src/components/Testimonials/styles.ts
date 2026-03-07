@@ -1,10 +1,14 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.darkBrown};
   color: ${colors.gray};
   padding: 128px 0;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 32px 0;
+  }
 `
 
 export const Section = styled.section`
@@ -33,9 +37,12 @@ export const Section = styled.section`
 
   ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 64px;
     padding: 0;
     margin: 0;
+
   }
 
   li {
@@ -49,13 +56,13 @@ export const Section = styled.section`
     list-style: none;
     border-radius: 8px;
     position: relative;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
     transition: transform 0.3s ease;
 
     &:hover {
       transform: translateY(-6px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     }
   }
 

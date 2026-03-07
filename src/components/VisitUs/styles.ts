@@ -1,11 +1,15 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.lightBrown};
   color: ${colors.gray};
   text-align: center;
   padding: 120px 0;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 32px 0;
+  }
 
   h2 {
     margin: 0 auto 48px;
@@ -49,4 +53,23 @@ export const Container = styled.div`
       }
     }
   }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      section {
+        img {
+          height: 480px;
+          padding-right: 32px;
+        }
+
+        ul {
+          h3 {
+          font-size: 24px;
+          }
+
+          li {
+            font-size: 18px;
+          }
+        }
+      }
+    }
 `

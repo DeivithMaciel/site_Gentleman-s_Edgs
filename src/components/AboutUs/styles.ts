@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
-import { colors } from "../../styles/GlobalStyles";
+import { breakpoints, colors } from "../../styles/GlobalStyles";
 
 export const Container = styled.div`
   width: 100%;
   background-color: ${colors.black};
   padding: 64px 0 128px 0;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 48px 0;
+  }
 `
 
 export const Content = styled.section`
@@ -38,6 +42,24 @@ export const Content = styled.section`
 
     button {
       margin: 0 auto;
+    }
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    img {
+      height: 360px;
+      width: 360px;
+    }
+
+    div {
+      p {
+        font-size: 24px;
+        line-height: 36px;
+    }
     }
   }
 `

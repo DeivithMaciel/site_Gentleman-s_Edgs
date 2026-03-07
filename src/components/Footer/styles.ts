@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import { breakpoints, colors } from "../../styles/GlobalStyles";
 
 export const Container = styled.div`
   background-color: ${colors.darkBrown};
@@ -20,16 +20,28 @@ export const Container = styled.div`
     p {
       font-size: 24px;
       margin-bottom: 8px;
+
+      @media (max-width: ${breakpoints.tablet}) {
+        margin-bottom: 16px;
+      }
     }
 
     span {
       padding: 0;
       font-size: 12px;
+
+      @media (max-width: ${breakpoints.tablet}) {
+        padding: 6px;
+      }
     }
   }
 
     span {
     padding-left: 24px;
     font-size: 18px;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      font-size: 14px;
+    }
   }
 `

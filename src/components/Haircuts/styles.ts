@@ -1,10 +1,14 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: #111;
   color: #fff;
   padding: 128px 0;
+
+    @media (max-width: ${breakpoints.tablet}) {
+      padding: 48px 0;
+    }
 `
 
 export const Title = styled.h2`
@@ -77,6 +81,13 @@ export const Slide = styled.li`
       opacity: 0.85;
     }
   }
+
+    @media (max-width: ${breakpoints.tablet})  {
+      img {
+        height: 360px;
+        width: 360px;
+      }
+    }
 `
 
 export const Dots = styled.div`

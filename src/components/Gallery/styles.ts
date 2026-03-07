@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.lightBrown};
@@ -10,9 +10,12 @@ export const Container = styled.div`
 export const List = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 16px;
 
   li {
     list-style: none;
+    display: flex;
+    justify-content: center;
 
     img {
       height: 180px;
@@ -22,5 +25,9 @@ export const List = styled.ul`
         transform: translateY(-4px);
       }
     }
+  }
+
+  @media (max-width:${breakpoints.tablet}) {
+    grid-template-columns: 1fr 1fr;
   }
 `
