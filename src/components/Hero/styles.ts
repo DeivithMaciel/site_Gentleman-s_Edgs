@@ -1,13 +1,9 @@
 import styled from 'styled-components'
-
 import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   color: ${colors.gray};
-    background: linear-gradient(
-  to left,
-  #000 40%,
-  rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to left, #000 40%, rgba(0, 0, 0, 0.8));
   width: 100%;
   padding-top: 128px;
 
@@ -18,28 +14,42 @@ export const Container = styled.div`
 
 export const Content = styled.section`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   div {
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 64px;
-
-    @media (max-width: ${breakpoints.tablet}) {
-      // felx-direction: line;
-    }
+    text-align: center;
 
     h1 {
       font-size: 48px;
-      text-align: center;
       font-weight: 900;
+      margin-bottom: 16px;
       padding-right: 64px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+    padding-top: 32px;
+
+      h1 {
+        font-size: 36px;
+        padding-right: 0;
+      }
     }
 
     p {
       font-size: 32px;
+      margin-bottom: 32px;
 
       @media (max-width: ${breakpoints.tablet}) {
         font-size: 24px;
+      }
+
+      @media (max-width: ${breakpoints.mobile}) {
+        font-size: 20px;
       }
     }
 
@@ -51,6 +61,10 @@ export const Content = styled.section`
         margin-left: 8px;
         margin-bottom: 16px;
       }
+
+      @media (max-width: ${breakpoints.mobile}) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -59,13 +73,16 @@ export const Content = styled.section`
 
     @media (max-width: ${breakpoints.tablet}) {
       height: 480px;
+      width: 360px;
+    }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      display: none;
     }
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
-    img {
-      height: 560px;
-      width: 360px;
-    }
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    align-items: center;
   }
 `

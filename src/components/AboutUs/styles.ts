@@ -62,4 +62,22 @@ export const Content = styled.section`
     }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    img {
+      height: 240px;
+      width: 240px;
+    }
+
+    div {
+      h3 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
 `

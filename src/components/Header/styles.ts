@@ -54,6 +54,20 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    section {
+    padding: 0 16px;
+      img {
+        height: 72px;
+        width: 72px;
+      }
+
+      ul {
+        display: none;
+      }
+    }
+  }
 `
 
 export const Button = styled.button`

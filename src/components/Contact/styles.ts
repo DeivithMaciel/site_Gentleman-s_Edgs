@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyles'
+import { breakpoints, colors } from '../../styles/GlobalStyles'
 
 export const Container = styled.div`
   background-color: ${colors.veryDarkBrown};
@@ -90,4 +90,48 @@ export const Container = styled.div`
       }
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  padding: 64px 16px;
+
+  .container {
+    padding: 32px 24px;
+  }
+
+  .contact-header {
+    margin-bottom: 48px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 16px 0 32px;
+    }
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  form {
+    h3 {
+      font-size: 20px;
+    }
+
+    input,
+    textarea {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+
+  .icons {
+    // grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 48px;
+  }
+}
 `

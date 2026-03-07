@@ -6,9 +6,9 @@ export const Container = styled.div`
   color: #fff;
   padding: 128px 0;
 
-    @media (max-width: ${breakpoints.tablet}) {
-      padding: 48px 0;
-    }
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 48px 0;
+  }
 `
 
 export const Title = styled.h2`
@@ -82,12 +82,34 @@ export const Slide = styled.li`
     }
   }
 
-    @media (max-width: ${breakpoints.tablet})  {
-      img {
-        height: 360px;
-        width: 360px;
-      }
+  @media (max-width: ${breakpoints.tablet}) {
+    img {
+      height: 360px;
+      width: 360px;
     }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    text-align: center;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+      height: 320px;
+    }
+
+    .info {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .meta {
+      justify-content: center;
+    }
+  }
 `
 
 export const Dots = styled.div`

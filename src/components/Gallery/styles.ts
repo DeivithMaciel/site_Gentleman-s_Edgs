@@ -30,4 +30,13 @@ export const List = styled.ul`
   @media (max-width:${breakpoints.tablet}) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+
+    li {
+      img {
+        height: 72px;
+      }
+    }
+  }
 `

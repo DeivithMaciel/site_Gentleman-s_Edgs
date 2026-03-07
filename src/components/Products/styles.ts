@@ -43,6 +43,14 @@ export const ButtonList = styled.ul`
       padding: 8px;
       cursor: pointer;
     }
+
+    @media (max-width: ${breakpoints.mobile}) {
+      padding: 0;
+
+      a {
+        font-size: 18px;
+      }
+    }
 `
 
 export const List = styled.ul`
@@ -52,6 +60,11 @@ export const List = styled.ul`
 
   @media (max-width: ${breakpoints.tablet}) {
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    align-items: center;
   }
 `
 

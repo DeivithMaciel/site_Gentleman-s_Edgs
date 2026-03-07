@@ -54,22 +54,33 @@ export const Container = styled.div`
     }
   }
 
-    @media (max-width: ${breakpoints.tablet}) {
-      section {
-        img {
-          height: 480px;
-          padding-right: 32px;
+  @media (max-width: ${breakpoints.tablet}) {
+    section {
+      img {
+        height: 480px;
+        padding-right: 32px;
+      }
+
+      ul {
+        h3 {
+          font-size: 24px;
         }
 
-        ul {
-          h3 {
-          font-size: 24px;
-          }
-
-          li {
-            font-size: 18px;
-          }
+        li {
+          font-size: 18px;
         }
       }
     }
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    section {
+      flex-direction: column;
+
+      ul {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
 `
