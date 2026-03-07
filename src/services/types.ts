@@ -19,3 +19,10 @@ export interface Haircut {
   duration: string
   image: string
 }
+
+export interface Client {
+  id: string
+  name: string
+  description: string
+  image: string
+}

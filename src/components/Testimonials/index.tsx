@@ -1,41 +1,35 @@
-import image from '../../assets/images/haircuts/hair.1.png'
+import { useEffect, useState } from 'react'
+
+import { Client } from '../../services/types'
+import { getClients } from '../../services/testimonials/api'
 
 import * as S from './styles'
 
 export const Testimonials = () => {
+  const [items, setItems] = useState<Client[]>([])
+
+  useEffect(() => {
+    const load = async () => {
+      const data = await getClients()
+      setItems(data)
+    }
+    load()
+  }, [])
+
   return (
     <S.Container>
-      <S.Section className='container'>
+      <S.Section className="container">
         <h2>What Our Clients Say</h2>
-        <p>Trusted by gentlemen who value precision and style.</p>
+        <h5>Trusted by gentlemen who value precision and style.</h5>
         <ul>
-          <li>
-            <img src={image} />
-            <span className='stars'>★★★★★</span>
-            <p>
-              Fantastic service and a perfect fade. The attention to detail is
-              impressive.
-            </p>
-            <span className='name'>- William Walter</span>
+          {items.map((client) => (
+            <li key={client.id}>
+            <img src={client.image} />
+            <span className="stars">★★★★★</span>
+            <p>"{client.description}"</p>
+            <span className="name">- {client.name}</span>
           </li>
-                    <li>
-            <img src={image} />
-            <span className='stars'>★★★★★</span>
-            <p>
-              Fantastic service and a perfect fade. The attention to detail is
-              impressive.
-            </p>
-            <span className='name'>- William Walter</span>
-          </li>
-                    <li>
-            <img src={image} />
-            <span className='stars'>★★★★★</span>
-            <p>
-              Fantastic service and a perfect fade. The attention to detail is
-              impressive.
-            </p>
-            <span className='name'>- William Walter</span>
-          </li>
+          ))}
         </ul>
       </S.Section>
     </S.Container>
