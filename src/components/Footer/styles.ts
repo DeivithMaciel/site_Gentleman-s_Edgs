@@ -44,4 +44,8 @@ export const Container = styled.div`
       font-size: 14px;
     }
   }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    text-align: center;
+  }
 `

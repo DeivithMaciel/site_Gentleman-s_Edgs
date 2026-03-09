@@ -15,6 +15,10 @@ export const Title = styled.h2`
   text-align: center;
   font-size: 48px;
   margin-bottom: 64px;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 36px;
+  }
 `
 
 export const Carousel = styled.div`
@@ -104,6 +108,10 @@ export const Slide = styled.li`
     .info {
       max-width: 100%;
       text-align: center;
+    }
+
+    h3 {
+      margin: 8px 0;
     }
 
     .meta {

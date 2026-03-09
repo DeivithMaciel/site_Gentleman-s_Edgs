@@ -10,6 +10,12 @@ export const Container = styled.div`
   @media (max-width: ${breakpoints.tablet}) {
     background-color: #000;
   }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+  }
 `
 
 export const Content = styled.section`
@@ -28,7 +34,6 @@ export const Content = styled.section`
       font-size: 48px;
       font-weight: 900;
       margin-bottom: 16px;
-      padding-right: 64px;
     }
 
     @media (max-width: ${breakpoints.mobile}) {
@@ -55,7 +60,6 @@ export const Content = styled.section`
 
     button {
       padding: 24px;
-      margin-left: 128px;
 
       @media (max-width: ${breakpoints.tablet}) {
         margin-left: 8px;

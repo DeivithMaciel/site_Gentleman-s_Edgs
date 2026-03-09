@@ -65,6 +65,8 @@ export const List = styled.ul`
   @media (max-width: ${breakpoints.mobile}) {
     grid-template-columns: 1fr;
     align-items: center;
+    padding-left: 0;
+    text-align: center;
   }
 `
 

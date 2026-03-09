@@ -77,9 +77,14 @@ export const Container = styled.div`
     section {
       flex-direction: column;
 
+      img {
+        padding-right: 0;
+      }
+
       ul {
         align-items: center;
         text-align: center;
+        padding-left: 0;
       }
     }
   }
