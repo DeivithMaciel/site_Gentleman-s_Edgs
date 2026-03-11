@@ -16,6 +16,10 @@ export const breakpoints = {
 }
 
 export const GlobalStyles = createGlobalStyle`
+  html {
+  scroll-behavior: smooth;
+}
+
   body {
   margin: 0;
   padding: 0;

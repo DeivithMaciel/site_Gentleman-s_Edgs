@@ -10,7 +10,6 @@ export const Container = styled.div`
   z-index: 1;
   transition: transform 0.3s ease-in-out;
 
-
   &.show {
     transform: translateY(0);
   }
@@ -57,7 +56,7 @@ export const Container = styled.div`
 
   @media (max-width: ${breakpoints.mobile}) {
     section {
-    padding: 0 16px;
+      padding: 0 16px;
       img {
         height: 72px;
         width: 72px;

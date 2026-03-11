@@ -9,7 +9,7 @@ export const VisitUs = () => {
   return (
     <S.Container>
       <h2>Visit Us</h2>
-      <section className="container">
+      <section id='visit-us' className="container">
         <img src={image} alt="Gentleman's Edge" />
         <ul>
           <h3><MapPin size={36}/>Adress</h3>

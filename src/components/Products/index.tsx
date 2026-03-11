@@ -14,9 +14,9 @@ export const Products = () => {
   }, [activeList])
 
   return (
-    <S.Container id="products">
+    <S.Container>
       <h2>Our Products</h2>
-      <section className="container">
+      <section id="products" className="container">
         <S.ButtonList>
           <a
             className={activeList === 'pomades' ? 'active' : ''}

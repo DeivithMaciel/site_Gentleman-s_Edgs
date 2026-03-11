@@ -47,7 +47,7 @@ export const Contact = () => {
 
   return (
     <S.Container>
-      <section className="container">
+      <section id='contact' className="container">
         <div className="contact-header">
           <h2>Get in Touch</h2>
           <p>

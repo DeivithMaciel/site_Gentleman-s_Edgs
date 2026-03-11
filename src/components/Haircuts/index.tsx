@@ -32,7 +32,7 @@ export const Haircuts = () => {
 
   return (
     <S.Container>
-      <section className="container">
+      <section id="haircuts" className="container">
         <S.Title>Some Of Our Haircuts</S.Title>
         <S.Carousel
         onMouseEnter={() => setPaused(true)}
